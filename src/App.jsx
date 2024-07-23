@@ -1,5 +1,7 @@
 
+import { BrowserRouter as Router } from 'react-router-dom'
 import './App.css'
+import AppRoutes from './routes/AppRoutes'
 
 function App() {
 
@@ -7,11 +9,11 @@ function App() {
   return (
     <>
       <div>
-      <h1>welcome to my app</h1>
+        <h1>welcome to my app</h1>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Router>
+        <AppRoutes />
+      </Router>
     </>
   )
 }
