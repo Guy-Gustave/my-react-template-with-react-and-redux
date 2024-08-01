@@ -1,7 +1,9 @@
 
 const Client = () => {
   return (
-    <div>Client</div>
+    <div>
+      <h1>client page</h1>
+    </div>
   )
 }
 

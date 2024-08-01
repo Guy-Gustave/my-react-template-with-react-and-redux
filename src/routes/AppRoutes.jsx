@@ -1,7 +1,12 @@
+
 import { Route, Routes } from 'react-router-dom';
+
 // import ClientsPage from '../pages/ClientsPage';
 // import HomePage from '../pages/HomePage';
-import Client from '../pages/client';
+import { Box, Toolbar } from '@mui/material';
+import Sidebar from '../components/sidebar/Sidebar';
+import Classe from '../pages/Classe';
+import Client from '../pages/Client';
 import HomePage from '../pages/home/HomePage';
 
 const AppRoutes = () => {
@@ -9,11 +14,22 @@ const AppRoutes = () => {
     <>
 
 
-      <Routes>
-        <Route exact path="/" component={<HomePage />} />
-        <Route path="/clients" component={<Client />} />
-        {/* Add more routes as needed */}
-      </Routes>
+      <Box sx={{ display: 'flex' }}>
+        <Sidebar />
+        <Box
+          component="main"
+          sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }}
+        >
+          <Toolbar /> {/* This ensures content is below the AppBar if you have one */}
+          <Routes>
+            <Route exact path="/" element={<HomePage />} />
+            <Route path="/clients" element={<Client />} />
+            <Route path="/classes" element={<Classe />} />
+
+            {/* Add more Routes as needed */}
+          </Routes>
+        </Box>
+      </Box>
 
     </>
   );

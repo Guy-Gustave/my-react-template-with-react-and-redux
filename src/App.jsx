@@ -6,11 +6,11 @@ import AppRoutes from './routes/AppRoutes'
 function App() {
 
 
+  // <h1>welcome to my app</h1>
   return (
     <>
-      <div>
-        <h1>welcome to my app</h1>
-      </div>
+
+
       <Router>
         <AppRoutes />
       </Router>
