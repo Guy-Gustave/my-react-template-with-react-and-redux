@@ -8,13 +8,11 @@ function App() {
 
   // <h1>welcome to my app</h1>
   return (
-    <>
-
-
+    <div>
       <Router>
         <AppRoutes />
       </Router>
-    </>
+    </div>
   )
 }
 
