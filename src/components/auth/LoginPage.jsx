@@ -1,4 +1,11 @@
-import { Box, Button, CircularProgress, Container, TextField, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  CircularProgress,
+  Container,
+  TextField,
+  Typography,
+} from "@mui/material";
 import axios from "axios";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
@@ -8,7 +15,7 @@ import { loginSuccess } from "../../redux/actions/authActions";
 const LoginPage = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const [formData, setFormData] = useState({ username: '', password: '' });
+  const [formData, setFormData] = useState({ username: "", password: "" });
   const [loading, setLoading] = useState(false);
 
   const handleInputChange = (e) => {
@@ -22,13 +29,13 @@ const LoginPage = () => {
     e.preventDefault();
     setLoading(true);
     // const apiUrl = process.env.REACT_APP_LOGIN_API_URL;
-    const apiUrl = 'http://127.0.0.1:8000/api/login/';
+    const apiUrl = "http://127.0.0.1:8000/api/login/";
 
-    console.log("formdata", formData)
+    console.log("formdata", formData);
     const response = await axios.post(apiUrl, formData);
     // Dispatch login action with form data
     dispatch(loginSuccess(response.data.token, response.data.user));
-    navigate('/');
+    navigate("/");
   };
 
   return (
@@ -58,7 +65,7 @@ const LoginPage = () => {
             onChange={handleInputChange}
           />
           <Button type="submit" variant="contained" disabled={loading}>
-            {loading ? <CircularProgress size={24} /> : 'Login'}
+            {loading ? <CircularProgress size={24} /> : "Login"}
           </Button>
         </form>
       </Box>

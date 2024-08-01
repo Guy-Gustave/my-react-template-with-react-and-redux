@@ -6,7 +6,7 @@ const initialState = {
   error: null,
 };
 
-const authReducer = (state= initialState, action) => {
+const authReducer = (state = initialState, action) => {
   switch (action.type) {
     case 'LOGIN_START':
       return {
@@ -23,24 +23,24 @@ const authReducer = (state= initialState, action) => {
         user: action.payload.user,
         error: null,
       };
-    
+
     case 'LOGIN_FAILURE':
-      return{
+      return {
         ...state,
         loading: false,
         error: action.payload
       };
 
-      case 'LOGOUT':
-        return {
-          ...state,
-          isAuthenticated: false,
-          token: null,
-          user: null,
-        };
+    case 'LOGOUT':
+      return {
+        ...state,
+        isAuthenticated: false,
+        token: null,
+        user: null,
+      };
 
-      default:
-        return state
+    default:
+      return state
   }
 };
 
