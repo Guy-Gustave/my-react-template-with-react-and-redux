@@ -8,6 +8,7 @@ import {
 } from "@mui/material";
 import axios from "axios";
 import { useState } from "react";
+import { FormattedMessage } from "react-intl";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { loginSuccess } from "../../redux/actions/authActions";
@@ -42,7 +43,7 @@ const LoginPage = () => {
     <Container maxWidth="sm">
       <Box mt={8}>
         <Typography variant="h4" align="center" gutterBottom>
-          Login
+          <FormattedMessage id="Login" />
         </Typography>
         <form onSubmit={handleFormSubmit}>
           <TextField

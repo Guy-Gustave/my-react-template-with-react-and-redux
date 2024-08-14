@@ -1,17 +1,29 @@
 
-import { BrowserRouter as Router } from 'react-router-dom'
-import './App.css'
-import AppRoutes from './routes/AppRoutes'
+import { BrowserRouter as Router } from 'react-router-dom';
+import './App.css';
+import AppRoutes from './routes/AppRoutes';
+
+import { IntlProvider } from 'react-intl';
+import { useSelector } from 'react-redux';
+import messages_en from './locales/en.json';
+import messages_fr from './locales/fr.json';
+
+const messages = {
+  en: messages_en,
+  fr: messages_fr,
+};
 
 function App() {
 
-
-  // <h1>welcome to my app</h1>
+  // <h1><FormattedMessage id="welcome" /></h1>
+  const locale = useSelector((state) => state.language.locale) || 'en';
   return (
     <div>
-      <Router>
-        <AppRoutes />
-      </Router>
+      <IntlProvider locale={locale} messages={messages[locale]}>
+        <Router>
+          <AppRoutes />
+        </Router>
+      </IntlProvider>
     </div>
   )
 }
