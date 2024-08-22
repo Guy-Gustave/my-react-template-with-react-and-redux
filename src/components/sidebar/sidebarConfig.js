@@ -1,7 +1,6 @@
 // import HomeIcon from '@mui/icons-material/Home';
 // import HomeIcon from '@mui/icons-material/Home';
 import PeopleIcon from '@mui/icons-material/People';
-import SettingsIcon from '@mui/icons-material/Settings';
 
 const sidebarConfig = [
   {
@@ -19,10 +18,15 @@ const sidebarConfig = [
     path: '/classes',
     icon: PeopleIcon,
   },
+  // {
+  //   title: 'TestPage',
+  //   path: '/examplePage',
+  //   icon: PeopleIcon,
+  // },
   {
     title: 'Settings',
     path: '/settings',
-    icon: SettingsIcon,
+    // icon: SettingsIcon,
   },
   // Add more menu items here
 ];

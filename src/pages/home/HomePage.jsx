@@ -1,10 +1,11 @@
+import { FormattedMessage } from "react-intl"
 
 
 const HomePage = () => {
   return (
     <>
 
-      <h1>this i homepage</h1>
+      <h1><FormattedMessage id="welcome" /></h1>
     </>
   )
 }

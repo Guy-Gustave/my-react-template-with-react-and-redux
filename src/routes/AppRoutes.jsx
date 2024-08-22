@@ -9,7 +9,9 @@ import RequireAuth from '../components/auth/RequireAuth';
 import Sidebar from '../components/sidebar/Sidebar';
 import Classe from '../pages/Classe';
 import Client from '../pages/Client';
+import ExamplePage from '../pages/example/ExamplePage';
 import HomePage from '../pages/home/HomePage';
+import Settings from '../utils/Settings';
 
 const AppRoutes = () => {
   return (
@@ -29,6 +31,8 @@ const AppRoutes = () => {
 
             <Route path="/clients" element={<Client />} />
             <Route path="/classes" element={<Classe />} />
+            <Route path="/settings" element={<Settings />} />
+            <Route path="/examplePage" element={<ExamplePage />} />
 
             {/* Add more Routes as needed */}
           </Routes>
