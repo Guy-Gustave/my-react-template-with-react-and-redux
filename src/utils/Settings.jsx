@@ -3,7 +3,7 @@ import LanguageSwitcher from './LanguageSwitcher'; // Adjust the path as necessa
 const Settings = () => {
   return (
     <div>
-      <h2>Settings</h2>
+
       {/* Other settings options */}
       <LanguageSwitcher />
 

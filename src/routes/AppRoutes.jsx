@@ -7,6 +7,7 @@ import { Box, Toolbar } from '@mui/material';
 import LoginPage from '../components/auth/LoginPage';
 import RequireAuth from '../components/auth/RequireAuth';
 import Sidebar from '../components/sidebar/Sidebar';
+import Assures from '../pages/assurés/Assures';
 import Classe from '../pages/Classe';
 import Client from '../pages/Client';
 import ExamplePage from '../pages/example/ExamplePage';
@@ -33,6 +34,7 @@ const AppRoutes = () => {
             <Route path="/classes" element={<Classe />} />
             <Route path="/settings" element={<Settings />} />
             <Route path="/examplePage" element={<ExamplePage />} />
+            <Route path="/insured" element={<Assures />} />
 
             {/* Add more Routes as needed */}
           </Routes>

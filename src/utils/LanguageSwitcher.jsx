@@ -1,5 +1,3 @@
-import { Button } from "@mui/material";
-import { FormattedMessage } from "react-intl";
 import { useDispatch } from "react-redux";
 import { setLanguage } from "../redux/actions/languageAuth";
 
@@ -12,9 +10,8 @@ const LanguageSwitcher = () => {
 
   return (
     <div>
-      <h1><FormattedMessage id="welcome" /></h1>
-      <Button variant="outlined" color="secondary" sx={{ mx: 3 }} onClick={() => handleLanguageChange('en')}>English</Button>
-      <Button variant="outlined" color="secondary" onClick={() => handleLanguageChange('fr')}>Français</Button>
+      <button onClick={() => handleLanguageChange('en')}>English</button>
+      <button onClick={() => handleLanguageChange('fr')}>Français</button>
     </div>
   );
 };

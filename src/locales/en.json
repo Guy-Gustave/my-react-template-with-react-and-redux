@@ -4,6 +4,9 @@
   "edit": "Edit",
   "save": "Save",
   "close": "Close",
-  "Login": "Login"
+  "Login": "Login",
+  "lastName": "Last Name",
+  "firstName": "First Name",
+  "profession":"Job"
   
 }

@@ -1,6 +1,8 @@
 // import HomeIcon from '@mui/icons-material/Home';
 // import HomeIcon from '@mui/icons-material/Home';
 import PeopleIcon from '@mui/icons-material/People';
+// import Client from '../../pages/Client';
+
 
 const sidebarConfig = [
   {
@@ -11,18 +13,19 @@ const sidebarConfig = [
   {
     title: 'Clients',
     path: '/clients',
-    icon: PeopleIcon,
+    // element: < Client />
+
   },
   {
     title: 'Classe',
     path: '/classes',
     icon: PeopleIcon,
   },
-  // {
-  //   title: 'TestPage',
-  //   path: '/examplePage',
-  //   icon: PeopleIcon,
-  // },
+  {
+    title: 'Insured',
+    path: '/insured',
+    // element: < />
+  },
   {
     title: 'Settings',
     path: '/settings',

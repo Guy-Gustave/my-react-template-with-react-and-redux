@@ -10,6 +10,7 @@ const Sidebar = () => {
   return (
     <Drawer
       variant="permanent"
+      anchor="left"
       sx={{
         width: drawerWidth,
         flexShrink: 0,
