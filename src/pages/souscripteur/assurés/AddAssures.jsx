@@ -1,8 +1,8 @@
 import { FormControl, FormControlLabel, Grid, InputLabel, MenuItem, Radio, RadioGroup, Stack } from "@mui/material";
 import { FormattedMessage } from "react-intl";
-import InputField from "../../components/common/InputField";
+import InputField from "../../../components/common/InputField";
 
-const Assures = () => {
+const AddAssures = () => {
 
   const categories = [
     {
@@ -54,6 +54,16 @@ const Assures = () => {
                 size="small"
                 fullWidth
                 label={<FormattedMessage id="firstName" />}
+                id="firstName"
+                name="firstName"
+              // placeholder={`${formatMessage({ id: 'enterFirstName' })}`}
+              />
+            </Grid>
+            <Grid item xs={6} lg={3}>
+              <InputField
+                size="small"
+                fullWidth
+                label={<FormattedMessage id="middleName" />}
                 id="firstName"
                 name="firstName"
               // placeholder={`${formatMessage({ id: 'enterFirstName' })}`}
@@ -129,22 +139,7 @@ const Assures = () => {
               // placeholder={`${formatMessage({ id: 'enterFirstName' })}`}
               />
             </Grid>
-            <Grid item xs={6} lg={3}>
-              <InputField
-                select
-                size="small"
-                fullWidth
-                label={<FormattedMessage id="idCustomerType" />}
-                name="idCustomerType"
-              >
-                <MenuItem value="">
-                  <em>
-                    <FormattedMessage id="none" />
-                  </em>
-                </MenuItem>
 
-              </InputField>
-            </Grid>
 
 
 
@@ -163,7 +158,7 @@ const Assures = () => {
                 select
                 size="small"
                 fullWidth
-                label={<FormattedMessage id="countryStay" />}
+                label={<FormattedMessage id="nationality" />}
                 name="idCountry"
               >
                 <MenuItem value="">
@@ -263,9 +258,7 @@ const Assures = () => {
 
             </Grid>
           </Grid>
-
         </Stack>
-
 
       </form>
 
@@ -273,4 +266,4 @@ const Assures = () => {
   )
 }
 
-export default Assures
+export default AddAssures

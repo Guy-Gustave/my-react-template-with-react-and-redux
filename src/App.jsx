@@ -26,19 +26,10 @@ function App() {
           <Box sx={{ display: 'flex' }}>
             <Navbar />
 
-            <Box
-              component="main"
-              sx={{
-                flexGrow: 1,
-                p: 3,
-                mt: 8, // This margin makes space for the fixed navbar
-                // eslint-disable-next-line no-undef
-                ml: 2 // This margin makes space for the sidebar
-              }}
-            >
-              <AppRoutes />
-            </Box>
+
+            <AppRoutes />
           </Box>
+
         </Router>
       </IntlProvider>
     </div>

@@ -6,6 +6,15 @@
   "close": "Fermer",  
   "Login": "S'autentifier",
   "lastName": "Nom",
-  "firstName": "firstName",
-  "profession": "la Profession"
+  "firstName": "Prénom",
+  "profession": "la Profession",
+  "middleName": "Mi Prénom",
+  "employer": "Employeur",
+  "maritalStatus": "Etat civil",
+  "phoneNumber": "Téléphone",
+  "placeOfBirth": "Lieu de naissance",
+  "idCard": "Carte d'identité",
+  "nationality": "Nationalité",
+  "city": "Ville",
+  "insuredList": "la liste des assurés"
 }

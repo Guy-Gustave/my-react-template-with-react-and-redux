@@ -7,6 +7,15 @@
   "Login": "Login",
   "lastName": "Last Name",
   "firstName": "First Name",
-  "profession":"Job"
+  "profession":"Job",
+  "middleName": "Middle Name",
+  "employer": "Employer",
+  "maritalStatus": "Marital Status",
+  "phoneNumber": "Phone number",
+  "placeOfBirth": "The place Of Birth",
+  "idCard": "National Id",
+  "nationality": "Nationality",
+  "city": "city",
+  "insuredList": "The list of insured persons"
   
 }
